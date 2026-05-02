@@ -1,0 +1,34 @@
+title: Claude Code 강의 실습용 환경 구축 가이드
+description: >-
+  Claude Code 입문부터 활용까지 — 한국어로 만나는 단계별 실습 시리즈.
+  설치, 인증, 프롬프트 작성, Skills, 데이터 분석, 플러그인까지.
+author: sinnarasam (신나라)
+lang: ko-KR
+encoding: utf-8
+
+theme: jekyll-theme-cayman
+
+# 빌드 시 제외할 파일
+exclude:
+  - CLAUDE.md
+  - hello.py
+  - python-calculator/
+  - .claude/
+  - LICENSE
+  - Gemfile
+  - Gemfile.lock
+  - vendor/
+  - node_modules/
+
+# 마크다운 처리
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+# 권한·기본 레이아웃
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
